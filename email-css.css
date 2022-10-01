@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Montserrat:wght@200&family=Poppins:wght@200;300;400&display=swap');
+
+:root {
+
+    /*          color / background-color           */
+
+  --primary-color: white;
+  --second-color:  black;
+  --third-color: #15317E;
+  --background-color: rgb(44, 45, 46);
+  --navbar-color: rgb(54, 54, 54);
+  --light-color-1: #fff;
+  --light-color-2: #f7f7f7;
+  --dark-color-1: rgb(27, 27, 65);
+  --dark-color-2: #333;
+  --dark-color-3: #494949;
+  --grey-color-1: #ddd;
+
+
+  /*        font size          */
+
+  --h1: 3.8rem;
+  --p: 1.5rem;
+  --h3: 2.5rem;
+  --logo: 3rem;
+  --small: .5rem;
+  --normal: 1rem;
+  --button: 1.6rem;
+
+}
+
+a {
+
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px;
+    font-family: 'Poppins',sans-serif;
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 13px;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+#CONTACT {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+  
+  }
+
+  .footer-cont {
+
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 530px;
+    height: 500px;
+    box-shadow: 0 0 25px white;
+
+  }
+  
+  #CONTACT .footer-message {
+  
+    display: flex;
+  
+  }
+  
+  #CONTACT .footer-cont{
+  
+    display: flex;
+    left: 10px;
+  
+  }
+  
+  .footer-message {
+  
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  
+  }
+  
+  .email, .fname, .comment {
+  
+    border-radius: 10px;
+    width: 500px;
+  
+  }
+  
+  #comment {
+  
+    border-radius: 20px;
+  
+  }
+  
+  #fname,
+  #email,
+  #comment {
+  
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+  
+  }
+  
+  .submit-btn {
+  
+    margin-top: 20px;
+  
+  }
+  
+  .submit {
+  
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    font-family: 'Poppins',sans-serif;
+    cursor: pointer;
+  
+  }
+
+  .submit-btn .homie {
+
+    margin-left: 195px;
+
+  }
+  
+  .footer-list {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+  
+  }
+  
+  .footer-menu .social-link {
+  
+    display: flex;
+    display: inline-block;
+  
+  }
+  
+
+  .foot-title {
+
+    font-size: var(--p);
+    color: var(--light-color-2);
+    font-family: 'Poppins', sans-serif;
+    margin-left: 190px;
+  
+  }
+  
+  #CONTACT .footer-message {
+  
+    margin-right: 300px;
+  
+  }
+
+  .reset {
+
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    font-family: 'Poppins',sans-serif;
+    cursor: pointer;
+
+  }
+  
+
+
+  @media (max-width: 1750px) {
+  }
+  @media (max-width: 1361px) {
+  }
+  @media (max-width: 1280px) {  
+   } 
+  @media (max-width: 1265px) {
+  }
+  @media (max-width: 1024px) {
+  }
+  @media (max-width: 920px) {
+  }
+  @media (max-width: 850px) {
+  }
+  @media (max-width: 791px) {
+  }
+  @media (max-width: 750px) {
+  }
+  @media (max-width: 623px) {
+
+    .footer-cont {
+
+      width: 500px;
+
+    }
+
+    .foot-title {
+
+      margin-left: 170px;
+    
+    }
+
+    #fname,
+    #email {
+
+      width: 450px;
+
+    }
+
+    #CONTACT .footer-message {
+  
+      margin-left: 10px;
+    
+    }
+
+    .submit-btn .homie {
+
+      margin-left: 145px;
+  
+    }
+    
+
+  }
+  @media (max-width: 540px) {
+
+    .footer-cont {
+
+      width: 450px;
+      height: 450px;
+
+    }
+
+    .foot-title {
+
+      margin-left: 150px;
+    
+    }
+
+    #fname,
+    #email {
+
+      width: 400px;
+
+    }
+
+    #CONTACT .footer-message {
+  
+      margin-left: 10px;
+    
+    }
+    
+    .submit {
+  
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+    
+    }
+
+    .reset {
+
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+   
+    }
+
+    a {
+
+      padding: 10px;
+      font-size: 12px;
+  
+  }
+
+  
+  .submit-btn .homie {
+
+    margin-left: 140px;
+
+  }
+  
+    
+  }
+  @media (max-width: 480px) {
+
+    .footer-cont {
+
+      width: 390px;
+      height: 400px;
+
+    }
+
+    .foot-title {
+
+      margin-left: 110px;
+    
+    }
+
+    #fname,
+    #email {
+
+      width: 340px;
+
+    }
+
+    #CONTACT .footer-message {
+  
+      margin-left: 10px;
+    
+    }
+    
+    .submit {
+  
+      padding: 7px;
+      padding-left: 20px;
+      padding-right: 20px;
+    
+    }
+
+    a {
+
+      padding: 9px;
+      font-size: 12px;
+  
+  }
+
+  .reset {
+
+    padding: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+ 
+  }
+
+  .submit-btn .homie {
+
+    margin-left: 85px;
+
+  }
+    
+  }
+  @media (max-width: 390px) {
+
+    .footer-cont {
+
+      width: 340px;
+      height: 370px;
+
+    }
+
+    .foot-title {
+
+      margin-left: 90px;
+    
+    }
+
+    #fname,
+    #email {
+
+      width: 295px;
+
+    }
+
+    #CONTACT .footer-message {
+  
+      margin-left: 10px;
+    
+    }
+    
+    .submit {
+  
+      padding: 5px;
+      padding-left: 20px;
+      padding-right: 20px;
+    
+    }
+
+    a {
+
+      padding: 9px;
+      font-size: 11px;
+  
+  }
+
+  .submit-btn .homie {
+
+    margin-left: 45px;
+
+  }
+  
+  }
+  @media (max-width: 375px) { 
+
+    .footer-cont {
+
+      width: 310px;
+      height: 370px;
+
+    }
+
+    .foot-title {
+
+      margin-left: 80px;
+    
+    }
+
+    #fname,
+    #email {
+
+      width: 265px;
+
+    }
+
+    #CONTACT .footer-message {
+  
+      margin-left: 10px;
+    
+    }
+
+    
+  .submit-btn .homie {
+
+    margin-left: 15px;
+
+  }
+
+  .submit {
+  
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  
+  }
+
+  .reset {
+
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+ 
+  }
+    
+  }
+  @media (max-width: 315px) {
+
+    .footer-cont {
+
+      width: 280px;
+      height: 370px;
+
+    }
+
+    .foot-title {
+
+      margin-left: 65px;
+    
+    }
+
+    #fname,
+    #email {
+
+      width: 230px;
+
+    }
+
+    .submit-btn .homie {
+
+      margin-left: 0;
+  
+    }
+
+  }
+  @media (max-width: 280px) {
+  
+  }

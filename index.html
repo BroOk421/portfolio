@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://formsubmit.co/el/towate"></script>
+    <link rel="icon" href="img/logo.jpg" type="img/icon">
+
+</head>
+<body>
+   
+<!--NAVBAR START-->
+
+    <header class="header-navbar-menu" id="main-navbar">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <div class="hamburger-menu">
+                <span class="hamburger1"></span>
+                <span class="hamburger2"></span>
+                <span class="hamburger3"></span>
+            </div>
+        </label>
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a href="#HOME" class="navLinks">HOME</a></li>
+                <li class="navbar-item"><a href="#ABOUT" class="navLinks">ABOUT</a></li>
+                <a href="#HOME"><img src="img/logo.jpg" class="logo"></a>
+                <li class="navbar-item"><a href="mastery.html" class="navLinks">MASTERY</a></li>
+                <li class="navbar-item"><a href="#CONTACT" class="navLinks">CONTACT</a></li>
+            </ul>
+    </header>
+
+<!--NAVBAR END-->
+
+<!--HOMEPAGE START-->
+
+    <section class="homepage" id="HOME">
+        <div class="effect-1"></div>
+        <div class="effect-2"></div>
+        <div class="effect-3"></div>
+        <div class="effect-4"></div>
+        <div class="row">
+          <div class="col col-1">
+            <img src="img\jonathan.jpg" class="pogi">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-2">
+            <h3>Hi there, Im</h3>
+            <h1>Jonathan Gamboa</h1>
+            <p>Web Developer</p>
+            <div class="row">
+                <div class="col col-3">
+                   <a href="https://drive.google.com/file/d/133nKPeHXL8gA_RR_LPlDYy0qJkJsC8vp/view?usp=drivesdk" class="more">MY CV</a>
+                 </div>
+             </div>
+          </div>
+        </div>
+    </section>
+
+<!--HOMEPAGE END-->
+
+<!--ABOUT START-->
+
+    <section class="aboutpage" id="ABOUT">
+      <div class="row">
+        <div class="col col-4">
+          <img src="img\pogi.jpg" class="tolok">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-5">
+          <h1 class="about-title">
+            ABOUT ME
+          </h1>
+          <p class="about-page">
+            Hi, I'm <b>JONATHAN GAMBOA,</b> 23 years old and im from Angono Rizal
+            i had skill of microsoft, excel and editing photos and videos and also
+            in html and css. and still learning programming languages to become a
+            web developer.
+          </p>
+        </div>
+       </div> 
+    </section>
+    
+ <!--ABOUT END-->
+
+  <!--CONTACT START-->
+
+    <section class="contact" id="CONTACT">
+      <i class="line"></i>
+        <form class="footer-cont" action="https://formspree.io/f/xyyvknbe" method="POST">
+          <div class="footer-message">
+            <h2 class="foot-title">CONTACT</h2>
+            <br>
+            <input type="text" id="fname" class="fname" name="FULL NAME" placeholder="FULL NAME" required><br>
+            <input type="email" id="email" class="email" name="EMAIL" placeholder="YOUR EMAIL" required><br>
+            <textarea name="contact-message" id="comment" cols="70" rows="17"  placeholder="MESSAGE"></textarea> 
+            <div class="submit-btn">
+            <button type="submit" value="btn" class="submit" >SUBMIT</button>
+            <input type="reset" value="RESET" class="reset">
+             </div>
+          </div>
+        </form>
+        
+        <div class="footer-list" id="FOOTERLIST">
+          <h1 class="contactss">Contact me</h1>
+          <br>
+          <a class="contacts" href="email.html"><iconify-icon icon="fontisto:email"></iconify-icon>Email Me</a>
+          <h1 class="footer-title">SOCIAL MEDIA ACCOUNT</h1>
+          <ul class="footer-menu" class="footer-link-menu">
+            <li class="social-link"><a href="https://www.facebook.com/rzq.polar/" class="facebook" id="facebook"><iconify-icon icon="bi:meta" width="40"></iconify-icon></a></li>
+            <li class="social-link"><a href="https://www.instagram.com/p/Ce-HiMYpGqg/?igshid=YmMyMTA2M2Y=" class="instagram" id="instagram"><iconify-icon icon="akar-icons:instagram-fill" width="40"></iconify-icon></a></li>
+            <li class="social-link"><a href="tiktok.com/@bro0k21" class="tiktok" id="tiktok"><iconify-icon icon="akar-icons:tiktok-fill" width="40"></iconify-icon></a></li>
+            <li class="social-link"><a href="https://mail.google.com/mail/u/0/#inbox"><iconify-icon icon="mdi:gmail" width="40"></iconify-icon></a></li>
+            <li class="social-link"><a href="https://github.com/BroOk421"><iconify-icon icon="akar-icons:github-fill" width="40" class="icons"></iconify-icon></a></li>
+          </ul>
+        </div>
+        <div class="my-emails">
+          <h1 class="my-email" id="heademail">MY EMAIL</h1>
+          <p class="my-email"><iconify-icon icon="clarity:email-line" width="20"></iconify-icon>mikazu01001gmail.com</p>
+          <h3 class="my-email" id="headnumber">NUMBER</h3>
+          <p class="my-email"><iconify-icon icon="fluent:contact-card-16-regular" width="20"></iconify-icon>09326218323</p>
+        </div>
+        <br>
+        <br>
+    </section>
+
+  <!--CONTACT END-->
+
+        <div class="footer-copyright" id="copyrigt">
+          <h1 class="copyright-title">&copy;Copyright Jonathan Gamboa</h1>
+        </div>
+
+</body>
+</html>

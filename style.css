@@ -1,0 +1,1453 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Montserrat:wght@200&family=Poppins:wght@200;300;400&display=swap');
+
+:root {
+
+    /*          color / background-color           */
+
+  --primary-color: white;
+  --second-color:  black;
+  --third-color: #15317E;
+  --background-color: rgb(44, 45, 46);
+  --navbar-color: rgb(54, 54, 54);
+  --light-color-1: #fff;
+  --light-color-2: #f7f7f7;
+  --dark-color-1: rgb(27, 27, 65);
+  --dark-color-2: #333;
+  --dark-color-3: #494949;
+  --grey-color-1: #ddd;
+
+
+  /*        font size          */
+
+  --h1: 3.8rem;
+  --p: 1.5rem;
+  --h3: 2.5rem;
+  --logo: 3rem;
+  --small: .5rem;
+  --normal: 1rem;
+  --button: 1.6rem;
+
+}
+
+* {
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+p {
+  
+  font-size: var(--p);
+}
+
+h1 {
+  
+  font-size: var(--h1);
+  
+}
+
+h3 {
+  
+  font-size: var(--h3);
+}
+
+ul li {
+
+  list-style: none;
+  margin: 20px;
+
+}
+
+ul {
+  
+  margin-left: 50px;
+  
+}
+
+a {
+
+  color: var(--light-color-2);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+
+  background-color: var(--background-color);
+
+}
+
+#check {
+
+  display: none;
+  
+}
+
+/*              NAVLINK-START             */
+
+header {
+
+  position: fixed;
+  display: flex;
+  flex-direction: wrap;
+  width: 100%;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--navbar-color);
+  box-shadow: 0 0 25px black;
+  z-index: 99;
+
+}
+
+.navbar-menu {
+
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+
+}
+
+.navbar-menu .logo {
+
+  margin-top: 9px;
+
+}
+
+.logo {
+
+  height: 60px;
+  width: 110px;
+  opacity: 70%;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+
+.navbar-menu .navbar-item {
+
+  margin-top: 24px;
+
+}
+
+.navLinks {
+
+  padding: 25px;
+
+}
+
+.navLinks:hover {
+
+  background-color: var(--dark-color-3);
+  padding: 25px;
+  border-radius: 10px;
+
+}
+
+section .homepage {
+  
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+  
+}
+
+.effect-1 {
+
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  left: 30px;
+  animation: spin 10s infinite ease;
+  border: 4px solid rgb(0, 255, 221);
+  z-index: -3;
+
+}
+
+@keyframes spin {
+  0%{
+    transform: rotate(0);
+  }
+  45%{
+    width: 200px;
+    height: 200px;
+    transform: rotate(360deg);
+  }
+  75%{
+    width: 100px;
+    height: 100px;
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+
+}
+
+.effect-2 {
+
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 100px;
+  right: 60px;
+  animation: spins 10s infinite ease;
+  border: 4px solid yellow;
+  z-index: -3;
+
+}
+
+
+@keyframes spins {
+  0%{
+    transform: rotate(0);
+  }
+  45%{
+    width: 200px;
+    height: 200px;
+    transform: rotate(360deg);
+  }
+  75%{
+    width: 100px;
+    height: 100px;
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+
+}
+
+.effect-3 {
+
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  bottom: 100px;
+  left: -60px;
+  animation: spin 10s infinite ease;
+  border: 4px solid green;
+  z-index: -3;
+
+}
+
+.effect-4 {
+
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: -100px;
+  right: 40px;
+  border: 4px solid white;
+  border-radius: 50%;
+  z-index: -3;
+
+}
+
+.row {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding-left: 220px;
+
+}
+
+.pogi {
+ 
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  cursor: pointer;
+  
+}
+
+
+.col {
+  
+  font-family: 'Poppins', sans-serif;
+  color: var(--light-color-1);
+  
+}
+
+.col-3 {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: -200px;
+
+}
+
+.more {
+
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  border: 1px solid var(--light-color-1);
+  border-radius: 10px;
+  width: 120px;
+  height: 40px;
+  padding-top: 5px;
+  transition: all .5s ease;
+
+}
+
+.more:hover {
+
+  background-color: var(--dark-color-3);
+  transform: scale(1.1);
+
+}
+
+.row .more {
+
+  margin-right: 15px;
+
+}
+
+
+section  {
+
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+
+}
+
+.aboutpage {
+  
+  background-color: var(--background-color);
+  padding-top: 100px;
+
+}
+
+.aboutpage .about-title {
+
+  margin-bottom: 10px;
+
+}
+
+
+.tolok {
+
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  cursor: pointer;
+  
+
+}
+
+.tolok:hover {
+
+  transform: scale(1.1);
+  transition: all 1s ease;
+  box-shadow: 0 0 20px var(--light-color-2);
+  z-index: -5;
+}
+
+.about-title,
+.about-page {
+  
+  color: var(--light-color-1);
+  text-align: left;
+ 
+}
+
+.col-5 {
+
+  margin-top: 20px;
+
+}
+
+.contactss {
+
+  font-size: 26px;
+  font-family: 'Poppins', sans-serif;
+  color: var(--grey-color-1);
+  display: none;
+
+}
+
+.contacts {
+
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 125px;
+  font-weight: 400;
+  transition: all .3s ease;
+  display: none;
+
+}
+
+#CONTACT {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-color);
+
+}
+
+#CONTACT .footer-message {
+
+  display: flex;
+  margin-left: 10px;
+
+}
+
+#CONTACT .footer-cont{
+
+  display: flex;
+  left: 10px;
+
+}
+
+.footer-message {
+
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+}
+
+.email, .fname {
+
+  border-radius: 20px;
+
+}
+
+#comment {
+
+  border-radius: 20px;
+
+}
+
+#fname,
+#email,
+#comment {
+
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.submit-btn {
+
+  margin-top: 20px;
+
+}
+
+.submit {
+
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+
+}
+
+.reset {
+
+  padding: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+  font-family: 'Poppins',sans-serif;
+  cursor: pointer;
+
+}
+
+.footer-list {
+
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+
+}
+
+.footer-menu .social-link {
+
+  display: flex;
+  display: inline-block;
+
+}
+
+#CONTACT .footer-list {
+
+  padding: 10px;
+  padding-bottom: 130px;
+
+}
+
+.footer-list .footer-title {
+
+  margin-top: -100px;
+
+}
+
+.footer-title {
+
+  font-size: var(--p);
+  color: var(--light-color-2);
+  font-family: 'Poppins', sans-serif;
+  margin-left: 65px;
+
+}
+
+#CONTACT .footer-message {
+
+  margin-top: 155px;
+  margin-right: 300px;
+
+}
+
+.my-emails {
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+#CONTACT .my-emails {
+
+  justify-content: center;
+  align-items: right;
+  margin-bottom: 210px;
+  margin-left: 200px;
+
+}
+
+.my-email {
+
+  font-size: 14px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+
+
+}
+
+.my-emails .my-email {
+
+  padding: 2px;
+
+}
+
+#heademail {
+
+  font-size: 23px;
+
+}
+
+#headnumber {
+
+  font-size: 23px;
+
+}
+
+.foot-title {
+
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 5px;
+
+}
+
+.footer-copyright {
+
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 0 10px black;
+
+}
+
+.footer-copyright .copyright-title {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 50px;
+
+}
+
+.copyright-title {
+
+  font-size: 16px;
+  color: var(--light-color-1);
+  font-family: 'Poppins', sans-serif;
+
+}
+
+@media (max-width: 1750px) {
+
+  #CONTACT .my-emails {
+
+    margin-bottom: 210px;
+    margin-left: 0;
+  
+  }
+
+  #CONTACT .footer-message {
+
+    margin-top: 155px;
+    margin-right: 0;
+  
+  }
+  
+}
+@media (max-width: 1361px) {
+
+  .col-3 {
+
+    margin-left: 0;
+  
+  }
+  
+  .homepage {
+
+    display: block;
+  
+  }
+  
+  .aboutpage {
+    
+    display: block;
+    
+  }
+
+  .aboutpage .about-title {
+
+    margin-bottom: 0;
+  
+  }
+  
+  .aboutpage .about-page {
+  
+    margin-top: 0;
+  
+  }
+
+  .aboutpage .tolok {
+
+    margin-top: 0;
+  
+  }
+  
+
+  .row {
+
+    padding-left: 0;
+
+  }
+
+  .col-1 {
+
+    margin-top: 140px;
+  
+  }
+
+  :root {
+
+    --h1: 3.3rem;
+    --p: 1.4rem;
+    --h3: 2.4rem;
+    }
+  
+    .pogi {
+   
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      
+    }
+
+    .col-2 {
+
+      margin-top: 10px;
+    }
+ 
+  .about-title,
+  .about-page {
+  
+  text-align: center;
+ 
+  }
+
+
+#fname,
+#email,
+#comment {
+
+  padding: 10px;
+
+}
+
+ #CONTACT {
+     
+    display: inline-block;
+    flex-direction: row;
+
+    }
+
+    .footer-message {
+
+      width: 800px;
+  
+    }
+    
+    .footer-title {
+
+      font-size: 1.3rem;
+      margin-left: 15px;
+      margin-top: 15px;
+
+    }
+
+    .footer-list .social-link {
+
+      margin-left: -29px;
+      padding-right: 20px;
+
+    }
+
+    #CONTACT .footer-list {
+
+      padding: 10px;
+      padding-bottom: 0;
+    
+    }
+
+    .footer-list {
+
+      display: inline-block;
+      flex-direction: row;
+    
+    }
+
+    .footer-link {
+
+      margin-left: 0;
+
+    }
+
+    #CONTACT .my-emails {
+
+      margin-left: 150px;
+    
+    }
+
+
+    .submit-btn {
+
+        padding-left: 0;
+
+    }
+
+    #CONTACT .footer-message {
+
+      margin-top: 100px;
+      margin-right: 10px;
+    
+    }
+  
+    #CONTACT {
+
+      height: 140vh;
+      
+    }
+
+    #CONTACT .my-emails {
+
+      margin-left: 30px;
+    
+    }
+
+    .footer-list .footer-title {
+
+      margin-top: 25px;
+    
+    } 
+
+}
+@media (max-width: 1280px) {  
+
+  .homepage {
+
+    display: block;
+  
+  }
+
+  :root {
+
+    --h1: 3rem;
+    --p: 1.5rem;
+
+    }
+  
+    .pogi {
+   
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      
+    }
+
+    .col-2 {
+
+      margin-top: 10px;
+    }
+
+    .tolok {
+
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;;
+    
+    }
+
+    #CONTACT .footer-message {
+
+      margin-top: 100px;
+  
+    }
+    
+    #CONTACT {
+
+      height: 140vh;
+
+    }
+
+    .row .more {
+
+      margin-right: 0;
+    
+    }
+    
+ } 
+@media (max-width: 1265px) {
+
+  .homepage {
+
+    flex-direction: column;
+  
+  }
+  
+  .aboutpage {
+    
+    flex-direction: column;
+    
+  }
+
+  .col-1 {
+
+    margin-top: 140px;
+  
+  }
+
+  .tolok {
+
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+  
+  }
+  
+
+}
+@media (max-width: 1024px) {
+
+  #CONTACT {
+
+    height: 150vh;
+
+  }
+
+  #CONTACT .footer-message {
+
+    margin-top: 100px;
+
+  }
+
+  .homepage .pogi {
+
+    margin-top: -10px;
+
+  }
+
+  .tolok {
+
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+
+  }
+
+  .pogi {
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  
+  }
+  
+  .about-title  {
+  
+    --h1: 2rem;
+    --p: .6rem; 
+  }
+
+.row .more {
+
+  margin-right: 0;
+
+}
+}
+@media (max-width: 920px) {
+
+  .homepage .pogi {
+
+    margin-top: 100px;
+    
+  }
+
+  .pogi {
+ 
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    
+  }
+
+  .tolok {
+
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+  
+  }
+  
+  .aboutpage .row .tolok {
+  
+    margin-top: 100px;
+  
+  }
+
+}
+@media (max-width: 850px) {
+
+.icons {
+
+  padding: 5px;
+  
+}
+
+}
+@media (max-width: 791px) {
+
+#fname,
+#email,
+#comment {
+
+  padding: 10px;
+  width: 95%;
+}
+
+
+
+}
+@media (max-width: 750px) {
+  
+
+  a {
+    font-size: 18px;
+  }
+
+  .logo {
+
+    display: none;
+
+  }
+  
+  ul li a {
+
+    font-size: 18px;
+    font-weight: bold;
+
+  }
+
+  .navbar-menu {
+
+      position: absolute;
+      cursor: pointer;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      top:-999px;
+      height: 100vh;
+      gap: 1rem;
+      z-index: -1;
+      transition: 0.5s;
+      opacity: 90%;
+      background-color: var(--dark-color-2);
+
+  }
+  
+  ul {
+    
+    margin-left: 0;
+    
+  }
+
+  #check {
+
+    display: none;
+
+  }
+
+  #check:checked ~ .navbar-menu {
+
+    top: 0;
+    
+  }
+  
+  .navbar-menu ul li {
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+/*                 hamburger-menu                 */
+
+  .hamburger-menu {
+
+    cursor: pointer;
+
+  }
+
+  header .hamburger-menu {
+
+    width: 10%;
+    height: 10px;
+  
+  }
+
+  .hamburger1 {
+  
+    position: absolute;
+    display: flex;
+    width: 30px;
+    height: 4px;
+    right: 30px;
+    top: 40px;
+    margin-top: 10px;
+    background-color: white;
+  
+  }
+  
+  .hamburger2 {
+  
+    position: absolute;
+    display: flex;
+    width: 30px;
+    height: 4px;
+    right: 30px;
+    top: 40px;
+    background-color: white;
+  
+  }
+  
+  .hamburger3 {
+  
+    position: absolute;
+    display: flex;
+    width: 30px;
+    height: 4px;
+    margin-top: -10px;
+    right: 30px;
+    top: 40px;
+    background-color: white;
+  
+  }
+
+.row .col-5 {
+
+  margin-left: 0;
+
+}
+
+.tolok {
+
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+
+}
+
+.about-title  {
+
+  --h1: 2rem;
+  --p: .6rem; 
+}
+
+
+.footer-title {
+
+    font-size: 1.2rem;
+
+}
+
+.facebook,
+.instagram,
+.tiktok {
+
+  font-size: 15px;
+
+}
+
+.contactss {
+
+  display: block;
+  margin-left: 12px;
+
+}
+
+.contacts {
+
+  display: block;
+  margin-left: 10px;
+
+}
+
+.foot-title,
+.fname,
+.email,
+#comment,
+.submit,
+.reset {
+
+  display: none;
+
+}
+
+#CONTACT {
+
+  height: 140vh;
+
+}
+
+#CONTACT {
+
+  margin-top: -60px;
+
+}
+
+.footer-list .foot-title {
+
+  margin-right: 10px;
+
+}
+
+.footer-list .social-link {
+
+  margin-left: -15px;
+  padding-right: 0;
+
+}
+
+.footer-list .facebook {
+
+  margin-left: 30px;
+
+}
+
+
+#heademail {
+
+  font-size: 18px;
+
+}
+
+#headnumber {
+
+  font-size: 18px;
+
+}
+
+}
+@media (max-width: 623px) {
+
+  :root {
+
+    --h1: 3rem;
+    --p: 1.5rem;
+    --h3: 2rem;
+    }
+  
+    .pogi {
+   
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      
+    }
+
+    .col-2 {
+
+      margin-top: 10px;
+    }
+
+    .about-page {
+
+      font-size: 1.2rem;
+
+    }
+
+
+}
+@media (max-width: 540px) {
+
+  :root {
+
+    --h1: 2.8rem;
+    --p: 1.2rem;
+    --h3: 1.8rem;
+    }
+  
+    .pogi {
+   
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      
+    }
+
+    .col-2 {
+
+      margin-top: 10px;
+    }
+
+    .tolok {
+
+      width: 270px;
+      height: 270px;
+      border-radius: 50%;
+    
+    }
+
+  #CONTACT {
+
+  height: 140vh;
+  
+}
+
+.homepage .pogi {
+
+  margin-top: 0;
+  
+}
+
+.aboutpage .row .tolok {
+
+  margin-top: 0;
+
+}
+    
+}
+@media (max-width: 480px) {
+
+  :root {
+
+  --h1: 1.4rem;
+  --p: .6rem;
+  --h3: 1.5rem;
+  }
+
+  .pogi {
+ 
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+  }
+
+.tolok {
+
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+
+}
+
+.homepage .pogi {
+
+  margin-top: 80px;
+  
+}
+
+.aboutpage .row .tolok {
+
+  margin-top: 40px;
+
+}
+
+
+.about-title  {
+
+  --h1: 1.2rem;
+
+}
+
+.about-page {
+
+  font-size: .8rem;
+
+}
+
+.aboutpage .row .tolok {
+
+  margin-top: 100px;
+
+}
+
+.footer-title {
+
+  font-size: 14px;
+
+}
+
+.facebook,
+.instagram,
+.tiktok {
+
+font-size: 12px;
+
+}
+
+#heademail {
+
+  font-size: 14px;
+
+}
+
+#headnumber {
+
+  font-size: 14px;
+
+}
+  
+}
+@media (max-width: 390px) {
+
+  #CONTACT {
+
+    height: 140vh;
+
+  }
+
+  #CONTACT .footer-message {
+
+    margin-top: 100px;
+
+  }
+}
+@media (max-width: 375px) { 
+
+  #CONTACT {
+
+    height: 150vh;
+
+  }
+
+  #CONTACT .footer-message {
+
+    margin-top: 100px;
+
+  }
+}
+@media (max-width: 315px) {
+
+  :root {
+
+  --h1: 1.7rem;
+  --p: .9rem;
+  --h3: 1.2rem;
+  }
+
+  .pogi {
+ 
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+  }
+  
+  .tolok {
+
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  
+  }
+  
+  .about-title  {
+  
+    --h1: 1.4rem;
+ 
+  }
+
+  .about-page {
+
+    font-size: 1rem;
+
+  }
+
+  .icons {
+
+    width: 20px;
+
+  }
+}
+@media (max-width: 280px) {
+
+  .homepage .pogi {
+
+    margin-top: 0;
+    
+  }
+  
+  .aboutpage .row .tolok {
+  
+    margin-top: 0;
+  
+  }
+
+  #CONTACT {
+
+    height: 150vh;
+
+  }
+
+}
